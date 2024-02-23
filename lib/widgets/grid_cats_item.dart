@@ -9,16 +9,8 @@ class GridCatsItem extends StatelessWidget {
   const GridCatsItem({
     Key? key,
     required this.cat,
-    required this.breed,
-    required this.cardImage,
-    required this.price,
-    required this.age,
-    required this.gender
   }) : super(key:key);
 
-  final String breed, cardImage, gender;
-  final double price;
-  final int age;
   final Cat cat;
 
   @override
@@ -58,14 +50,14 @@ class GridCatsItem extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(14),
                     image: DecorationImage(
-                        image: NetworkImage(cardImage),
+                        image: NetworkImage(cat.cardImage),
                         fit: BoxFit.fill,
                       ),
                   ),
                 ),
                 const SizedBox(height: 4,),
                 Text(
-                  breed,
+                  cat.breed,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
@@ -75,7 +67,7 @@ class GridCatsItem extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "\$$price",
+                      "\$${cat.price}",
                       style: const TextStyle(
                         fontSize: 16,
                         color: Colors.orangeAccent,

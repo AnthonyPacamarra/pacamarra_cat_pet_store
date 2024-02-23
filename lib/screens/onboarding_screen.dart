@@ -20,20 +20,20 @@ class OnboardingScrenState extends State<OnboardingScren>{
   final List<Map<String, dynamic>> pages = [
     {
       'image':'assets/onboarding/1.png',
-      'title':'Cats is so Good 1',
-      'description':'111. Cats is so Good. Cats is so Good. Cats is so Good. Cats is so Good',
+      'title':'Welcome to Cat Store!',
+      'description':"Ready to embark on a journey of feline companionship? Let's get started by exploring our wide range of adorable cats waiting for a loving home. From playful kittens to majestic seniors, we have the perfect companion for every cat lover.",
       'skip': true,
     },
     {
       'image':'assets/onboarding/2.png',
-      'title':'Cats is so Good 2',
-      'description':'222. Cats is so Good. Cats is so Good. Cats is so Good. Cats is so Good',
+      'title':'Discover Your Perfect Pet!',
+      'description':"Swipe through our gallery of charming cats to find your purrfect match. Whether you're drawn to playful kittens or elegant adults, we have a variety of personalities and breeds just waiting to steal your heart.",
       'skip': true,
     },
     {
       'image':'assets/onboarding/3.png',
-      'title':'Cats is so Good 3',
-      'description':'333. Cats is so Good. Cats is so Good. Cats is so Good. Cats is so Good',
+      'title':'Get Ready For Cat Store!',
+      'description':"Once you've found the cat that captures your affection, it's time to make it official! Complete the adoption process and prepare for a lifetime of cuddles, purrs, and unforgettable memories. Welcome to the family!",
       'skip': false,
     },
   ];

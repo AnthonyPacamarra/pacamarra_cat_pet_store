@@ -49,7 +49,7 @@ class DetailScreen extends StatelessWidget {
                         ],
                       ),
                       IconButton(
-                        color: Colors.black,
+                        color: Colors.orangeAccent,
                         onPressed: () {
                           if (cartProvider.items.contains(cat)) {
                             cartProvider.remove(cat);
@@ -59,7 +59,7 @@ class DetailScreen extends StatelessWidget {
                         },
                         icon: Icon(
                           cartProvider.items.contains(cat) ? Icons.check : Icons.shopping_cart,
-                          color: cartProvider.items.contains(cat) ? Colors.black : null,
+                          color: cartProvider.items.contains(cat) ? Colors.orangeAccent : null,
                         ),
                         iconSize: 40,
                       ),
